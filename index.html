@@ -4,21 +4,172 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Team Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-color: #141414;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 10px; /* 👈 Lowered title */
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-top: 50px; /* Pushes the text lower */
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      width: 150px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    .add-profile {
+      background-color: #333;
+      border: 2px dashed #777;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      border-radius: 8px;
+      font-size: 3em;
+      color: #777;
+      transition: background 0.3s;
+    }
+
+    .add-profile:hover {
+      background-color: #555;
+    }
+
+    .manage-btn {
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #777;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .manage-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Our Portfolio Website</h1>
-    <nav>
-      <ul>
-        <li><a href="lhance.html">Lhance Cainoy</a></li>
-        <li><a href="member2.html">Member 2</a></li>
-        <li><a href="member3.html">Member 3</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <p>This website showcases the individual portfolios of our team members. We applied everything we’ve learned about HTML and CSS.</p>
-  </main>
+
+<header>
+  <h1>Who's Portfolio?</h1>
+</header>
+
+
+<main>
+  <div class="team">
+    <div class="card">
+      <a href="Lhance.html">
+        <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg" alt="Member 1">
+      </a>
+      <p>Lhance</p>
+    </div>
+
+    <div class="card">
+      <a href="Marco-Gonzales.html">
+        <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg" alt="Member 2">
+      </a>
+      <p>Marco</p>
+    </div>
+
+    <div class="card">
+      <a href="">
+      <img src="https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg" alt="Member 3">
+      </a>
+      <p>Jack</p>
+    </div>
+
+    <div class="card">
+      <a href="roche.html">
+      <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-dyrp6bw6adbulg5b.jpg" alt="Member 4">
+      </a>
+      <p>Roche</p>
+    </div>
+
+    <div class="card">
+      <a href="">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Member 5">
+      </a>
+      <p>Marlo</p>
+    </div>
+
+    <div class="card">
+      <div class="add-profile">+</div>
+      <p>Add Profile</p>
+    </div>
+  </div>
+
+  <button class="manage-btn">Documentation's</button>
+</main>
+
+<footer>
+  © 2025 Team Portfolio | All Rights Reserved
+</footer>
+
 </body>
 </html>
