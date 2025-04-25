@@ -3,19 +3,17 @@ using namespace std;
 
 int main() {
     char name[100];//char para sa name [100] para malimit ang letters sa 100
-    int age;
+    cout << "Lhance Cainoy" << endl;
+    return 0;
 
-    // users name
-    cout << "Enter your name: ";
-cin.getline(name, 100);// cin,getline para masama space na nilagy ni user
+    int age= 19;
+    double height= 5.9;
+    char grade= 'A';
+    bool LikesProgramming = true;
+    cout << " Age: " << age << endl;
+    cout << " Height: " << height << "feet "<< endl;
+    cout << " Grade: " << grade << endl;
+    cout << " LikesProgramming: " << "true" ; "false" << endl;
 
-
-    //age ng user
-    cout << "Enter your age: ";
-    cin >> age;
-
-    //Dito makikita information na nilagay ng user
-    cout <<"Hello, " << name << "! You are " << age << " years old." <<endl;
-
-
-    return 0;// end ang program
+    return 0;
+}

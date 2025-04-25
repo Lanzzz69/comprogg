@@ -1,0 +1,152 @@
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+      box-sizing: border-box;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .header {
+      background-color: #007acc;
+      color: white;
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      object-fit: cover;
+    }
+    .header h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Info Section Styles */
+    .info-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    .info-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .info-card:hover {
+      transform: translateY(-10px);
+    }
+    .info-card h2 {
+      font-size: 22px;
+      color: #007acc;
+    }
+    .info-card p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* About Me Section */
+    .about-me {
+      background-color: #fff;
+      padding: 30px;
+      width: 100%;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .about-me h2 {
+      font-size: 28px;
+      color: #333;
+    }
+    .about-me p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .info-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .info-card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src="Neil.jpg" alt="My Photo">
+      <h1>Neil Josef S. Esconde</h1>
+      <p>Industrial Engineering Student</p>
+      <p>
+        <a href="https://www.facebook.com/nesconde7" target="_blank" style="color: #ffffff; text-decoration: underline;">
+          Visit my Facebook Profile
+        </a>
+      </p>
+    </div>
+
+    <!-- Info Cards Section -->
+    <div class="info-cards">
+      <div class="info-card">
+        <h2>Address</h2>
+        <p>Centro Santa Lucia Samal Bataan</p>
+      </div>
+      <div class="info-card">
+        <h2>Cellphone</h2>
+        <p>09685050986</p>
+      </div>
+      <div class="info-card">
+        <h2>Gender</h2>
+        <p>Male</p>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>I'm currently studying Industrial Engineering. I have a passion for solving complex problems, improving systems, and optimizing processes. I enjoy working on real-world challenges, whether it's streamlining operations or finding creative ways to make things more efficient. My goal is to continuously grow as both a student and a professional in the field of engineering.</p>
+    </div>
+  </div>
+</body>
+</html>
